@@ -1,0 +1,52 @@
+.time-progress-bar {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 8px;
+
+  .progress-wrap {
+    width: calc(100% - 90px);
+    padding: 2px 0;
+  }
+
+  .time-label {
+    font-size: 11px;
+    text-align: right;
+    color: #646777;
+    padding: 0 10px 0 0;
+  }
+  
+  .progress-bar-content {
+    display: flex;
+
+    .title {
+      width: 90px;
+      text-align: right;
+      color: #646777;
+      padding-right: 20px;
+    }
+
+    .container {
+      width: calc(100% - 90px);
+      height: 20px;
+      background-color: #dedede;
+      border: 1px solid #dddddd;
+      border-radius: 5px;
+      
+      .fill-content {
+        display: flex;
+        height: 100%;
+        border: 1px solid #3f7506;
+        background: #3a8104 50% 50% repeat-x;
+        border-radius: 5px;
+        margin-top: -1px;
+        margin-left: -1px;
+      }
+    }
+    
+    .percent-value {
+      width: 80px;
+      padding: 0 0px 0 20px;
+      text-align: center;
+    }
+  }
+}

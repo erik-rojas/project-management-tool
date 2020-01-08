@@ -1,0 +1,90 @@
+.user-navbar {
+  width: 200px;
+  height: 100vh;
+  border-right: 1px solid #f2f4f7;
+
+  .all-task {
+    text-align: center;
+    border-bottom: 1px solid #f2f4f7;
+    cursor: pointer;
+
+    a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      font-size: 20px;
+      color: #646777;
+      padding: 15px 0 15px 15px;
+    }
+  }
+
+  &-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #f2f4f7;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #fafbfe;
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+    }
+
+    .user-avatar {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      overflow: hidden;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      margin: 0 15px 0 10px;
+
+      img {
+        width: auto;
+        object-fit: cover;
+        transform: scale(0.25);
+      }
+    }
+
+    .user-info {
+      p {
+        margin: 0;
+      }
+
+      .user-name {
+        color: #646777;
+        font-size: 14px;
+        font-weight: 500;
+      }
+
+      .user-role {
+        color: #646777;
+        font-size: 12px;
+      }
+    }
+  }
+
+  .active {
+    background-color: #fafbfe;
+
+    a {
+      font-weight: bold;
+
+      .user-info {
+        .user-name {
+          font-weight: bold;
+        }
+
+        .user-role {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

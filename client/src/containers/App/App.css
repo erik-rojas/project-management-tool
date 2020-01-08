@@ -1,0 +1,42 @@
+.app {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+.navbar {
+  width: 100px;
+  height: 100vh;
+  background-color: #323232;
+}
+
+.page-content {
+  width: calc(100vw - 100px);
+}
+
+.logo-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.logo-section img {
+  width: 80px;
+  height: 80px;
+}
+
+.navbar .nav-item {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.navbar .nav-item:hover {
+  cursor: pointer;
+  background-color: #262626;
+}
+
+.navbar .nav-item.active {
+  color: white;
+  background-color: #262626;
+}

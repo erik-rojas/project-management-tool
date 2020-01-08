@@ -1,0 +1,191 @@
+.task {
+  display: flex;
+  width: 100%;
+
+  &-content {
+    width: 100%;
+
+    &-header {
+      display: flex;
+      justify-content: flex-end;
+      padding: 10px 20px;
+
+      .btn-refresh {
+        svg {
+          margin: 0 !important;
+          width: 20px;
+          height: 20px;
+        }
+      }
+
+      .btn-add-task {
+        color: white;
+        background-color: red;
+        border-radius: 5px;
+        padding: 10px 20px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .drag-drop-context {
+    background-color: #fafafa;
+    border-radius: 5px;
+    padding: 20px;
+  }
+
+  .item-content {
+    display: flex;
+    flex-direction: column;
+
+    .progress-bar-group {
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+      margin: 10px 5px;
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: 0px 0px 5px #dcdcdc;
+
+      &-header {
+        display: flex;
+        align-items: center;
+        width: calc(100% - 280px);
+        margin-bottom: 5px;
+
+        .btn {
+          padding: 5px 10px;
+          margin-bottom: 0;
+        }
+
+        .dropdown-menu {
+          width: 100px;
+          min-width: 100px;
+          padding: 5px 0;
+          margin-left: -20px;
+        }
+
+        .btn-timer {
+          width: 60px;
+          text-align: center;
+          border-radius: 5px;
+          color: white;
+          cursor: pointer;
+        }
+
+        .btn-timer.disable {
+          cursor: default;
+          pointer-events: none;
+          background-color: #b51010;
+        }
+
+        .header-title {
+          width: calc(100% - 140px);
+          padding: 0 10px;
+          font-size: 16px;
+          font-weight: bold;
+          color: #646777;
+        }
+
+        .btn-delete {
+          width: 20px;
+          height: 20px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 15px;
+          border-radius: 50%;
+          color: red;
+          background-color: white;
+          cursor: pointer;
+        }
+      }
+
+      &-content {
+        display: flex;
+        justify-content: space-between;
+
+        .progressbar-content {
+          width: calc(100% - 290px);
+          padding-bottom: 10px;
+        }
+
+        .comment-content {
+          width: 260px;
+          margin: -25px 0 5px;
+        }
+
+        .comment-box {
+          width: 200px;
+          height: calc(100% - 12px);
+          position: relative;
+          background-color: #ffffff;
+          border-radius: 8px;
+          border: 2px solid #dadada;
+          padding: 8px 10px;
+
+          &:before {
+            content: "";
+            width: 0px;
+            height: 0px;
+            position: absolute;
+            border-left: 20px solid transparent;
+            border-right: 20px solid transparent;
+            border-top: 10px solid #dadada;
+            border-bottom: 10px solid transparent;
+            left: 20%;
+            bottom: -20px;
+          }
+
+          &:after {
+            content: "";
+            width: 0px;
+            height: 0px;
+            position: absolute;
+            border-left: 20px solid transparent;
+            border-right: 20px solid transparent;
+            border-top: 10px solid #ffffff;
+            border-bottom: 10px solid transparent;
+            left: 20%;
+            bottom: -18px;
+          }
+
+          .comment-text {
+            color: #646777;
+          }
+
+          .slick-initialized {
+            position: initial;
+
+            .slick-list {
+              width: calc(100% - 16px);
+            }
+
+            .slick-prev {
+              width: 25px;
+              height: 25px;
+              top: 15px;
+              left: calc(100% + 10px);
+            }
+
+            .slick-next {
+              width: 25px;
+              height: 25px;
+              top: 15px;
+              left: calc(100% + 35px);
+            }
+          }
+        }
+
+        .view-all {
+          font-size: 12px;
+          color: #646777;
+          text-align: right;
+          padding: 2px 10px;
+          margin-right: 60px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
